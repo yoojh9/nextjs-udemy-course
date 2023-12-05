@@ -1,19 +1,25 @@
-import Link from "next/link";
+function HomePage(props) {
+  const { products } = props;
 
-function HomePage() {
   return (
-    <div>
-      <h1>The Home Page</h1>
-      <ul>
-        <li>
-          <Link href="/portfolio">Portfolio</Link>
-        </li>
-        <li>
-          <Link href="/clients">Clients</Link>
-        </li>
-      </ul>
-    </div>
+    <ul>
+      {products.map((product) => (
+        <li key={product.id}>{product.title}</li>
+      ))}
+    </ul>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      products: [
+        { id: "p1", title: "Product 1" },
+        { id: "p2", title: "Product 2" },
+        { id: "p3", title: "Product 3" },
+      ],
+    },
+  };
 }
 
 export default HomePage;
