@@ -49,9 +49,9 @@ export async function getStaticPaths() {
   return {
     paths: pathsWithParams,
     fallback: false,
-    // fallback: true => pid:'p1'만 사전 생성하고 다른 pid가 들어올 경우 요청 시 서버에서 생성함
+    // fallback: true => getStaticPaths가 반환한 path들은 빌드 타음에 HTML로 렌더링 된다. 이외의 path들에 대한 요청이 들어올 경우 404 페이지를 반환하지 않고 사용자에게 fallback 페이지를 보여준 후 서버에서 페이지를 생성한다.
     // fallback: 'blocking' => 서버에서 완전히 생성될 때까지 NextJS가 기다림.
-    // fallback: false => 모두 사전 생성할 경우
+    // fallback: false => 모두 사전 생성할 경우. 반환되지 않은 path 외 모든 path는 자동으로 404 페이지를 라우팅
   };
 }
 
