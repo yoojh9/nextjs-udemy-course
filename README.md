@@ -63,4 +63,4 @@ export async function getServerSideProps() {...}
 ## 6) useSWR()
 
 - https://swr.vercel.app/ko
-- 브라우저에서 탭에서 포커스를 잃거나 다시 얻을 경우 자동으로 fetch 해 줌.
+- 브라우저에서 탭에서 포커스를 잃거나 다시 얻을 경우 자동으로 fetch 해줌.
