@@ -1,3 +1,4 @@
+import Head from "next/head";
 import EventContent from "../../components/event-detail/event-content";
 import EventLogistics from "../../components/event-detail/event-logistics";
 import EventSummary from "../../components/event-detail/event-summary";
@@ -20,6 +21,10 @@ function EventDetailPage(props) {
   }
   return (
     <>
+      <Head>
+        <title>{selectedEvent.title}</title>
+        <meta name="description" content={selectedEvent.description}></meta>
+      </Head>
       <EventSummary title={selectedEvent.title} />
       <EventLogistics
         date={selectedEvent.date}

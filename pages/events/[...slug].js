@@ -5,6 +5,7 @@ import EventList from "../../components/events/event-list";
 import ResultsTitle from "../../components/events/results-title";
 import Button from "../../components/ui/button";
 import ErrorAlert from "../../components/ui/error-alert";
+import Head from "next/head";
 
 function FilteredEventPage() {
   const [loadedEvents, setLoadedEvents] = useState();
@@ -85,10 +86,17 @@ function FilteredEventPage() {
   const date = new Date(numYear, numMonth - 1);
 
   return (
-    <div>
+    <>
+      <Head>
+        <title>Filtered Events</title>
+        <meta
+          name="description"
+          content={`All events for ${numMonth}/${numYear}`}
+        ></meta>
+      </Head>
       <ResultsTitle date={date} />
       <EventList items={filteredEvents} />
-    </div>
+    </>
   );
 }
 
