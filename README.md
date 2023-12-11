@@ -22,3 +22,8 @@
 
 ## 4. NextJS 앱 최적화하기
 - https://github.com/yoojh9/nextjs-udemy-course/tree/06-optimization
+
+<br>
+
+## 5. API Route를 통해 백엔드 코드 추가하기
+- https://github.com/yoojh9/nextjs-udemy-course/tree/07-api-routes
