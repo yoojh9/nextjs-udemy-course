@@ -17,3 +17,8 @@
 
 ## 3. 페이지 사전 렌더링 & 데이터 fetching 실습
 - https://github.com/yoojh9/nextjs-udemy-course/tree/05-prj-data-fetching
+
+<br>
+
+## 4. NextJS 앱 최적화하기
+- https://github.com/yoojh9/nextjs-udemy-course/tree/06-optimization
