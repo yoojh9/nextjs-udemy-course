@@ -1,27 +1,34 @@
-# NextJS 앱 최적화하기
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## 1) Adding Meta and <head> Tags
+## Getting Started
 
-- Head 컴포넌트를 이용한다.
+First, run the development server:
 
-```js
-import Head from "next/head";
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-<br>
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 2) Re-using Components, Logic & Configuration
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-- \_app.js와 \_document.js 파일은 특정 설정과 요소를 구성하여 애플리케이션의 모든 페이지에서 사용할 수 있게 해준다.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-<br>
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## 3) Optimizing Images
+## Learn More
 
-- next/image의 Image 컴포넌트를 사용
-- 이미지를 최적화하여 아주 큰 이미지를 그대로 불러오지 않게 함
-- 필요할 때만 이미지가 로딩되어 (lazy loading) 발생하는 요청 수를 줄일 수 있고 그 페이지에 할당되는 대역폭도 줄일 수 있다.
+To learn more about Next.js, take a look at the following resources:
 
-```js
-<Image src={"/" + image} alt={title} width={340} height={160} />
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
