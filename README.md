@@ -32,3 +32,8 @@
 
 ## 6. API 라우트 실습
 - https://github.com/yoojh9/nextjs-udemy-course/tree/08-prj-api-routes
+
+<br>
+
+## 7. 처음부터 끝까지 블로그 구축하기
+- https://github.com/yoojh9/nextjs-udemy-course/tree/10-prj-blog
