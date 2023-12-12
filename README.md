@@ -27,3 +27,8 @@
 
 ## 5. API Route를 통해 백엔드 코드 추가하기
 - https://github.com/yoojh9/nextjs-udemy-course/tree/07-api-routes
+
+<br>
+
+## 6. API 라우트 실습
+- https://github.com/yoojh9/nextjs-udemy-course/tree/08-prj-api-routes
