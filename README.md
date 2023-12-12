@@ -1,1 +1,3 @@
-# API Route 프로젝트 실습
+# React Context
+
+- App wide state management
