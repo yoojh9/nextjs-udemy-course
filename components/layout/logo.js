@@ -1,5 +1,7 @@
+import classes from "./logo.module.css";
+
 const Logo = () => {
-  return <></>;
+  return <div className={classes.logo}>Jeonghyun' Next Blog</div>;
 };
 
 export default Logo;
