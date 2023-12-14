@@ -37,3 +37,8 @@
 
 ## 7. 처음부터 끝까지 블로그 구축하기
 - https://github.com/yoojh9/nextjs-udemy-course/tree/10-prj-blog
+
+<br>
+
+## 8. 인증
+- https://github.com/yoojh9/nextjs-udemy-course/tree/12-auth
